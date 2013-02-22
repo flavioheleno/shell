@@ -80,7 +80,7 @@ int isCommand(char *command) {
 //adiciona o path ao comando
 char *createCommand(char *app, char *path) {
 	char *cmd;
-	cmd = (char *)malloc((sizeof(char) * (strlen(app) + strlen(path) + 1)));
+	cmd = (char *)malloc((sizeof(char) * (strlen(app) + strlen(path) + 2)));
 	strcpy(cmd, path);
 	strcat(cmd, "/");
 	strcat(cmd, app);
